@@ -23,7 +23,19 @@ public class StudentTest {
     }
 
     @Test
-    public void
+    public void testEnterGrade() {
+        student.enterGrade(70);
+        student.enterGrade(80);
+        student.enterGrade(90);
+        student.enterGrade(100);
+        assertEquals(4, student.getGrades().size());
+        assertEquals(85, student.getGradeAverage(), 0.01);
+
+    }
+}
+
+
+    }
 
 
 }
